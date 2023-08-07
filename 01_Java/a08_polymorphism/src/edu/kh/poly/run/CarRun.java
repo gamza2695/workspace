@@ -71,5 +71,6 @@ public class CarRun {
 		System.out.println(((Porsche)carArr[1]).isOpenTheDoor());
 		System.out.println(((Spark)carArr[2]).getDiscountRate());
 
+		// 복습했음
 	}
 }
