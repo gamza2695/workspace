@@ -15,4 +15,5 @@ public interface Calculator {
 	public abstract double areaOfCircle(double r); // 원의 넓이
 	public abstract int pow(int a, int x); // 거듭 제곱
 
+	
 }
