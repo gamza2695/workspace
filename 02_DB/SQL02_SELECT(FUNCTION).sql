@@ -92,12 +92,11 @@ GROUP BY SUBSTR(TERM_NO,1,4)
 ORDER BY SUBSTR(TERM_NO,1,4);
 
 
--- 11번 ★★★★
+-- 11번 ★
 -- 학과 별 휴학생 수를 파악하고자 한다.
 -- 학과 번호와 휴학생 수를 조회하는 SQL을 작성하시오.
-SELECT DEPARTMENT_NO 학과코드명, COUNT(*) "휴학생 수"
+SELECT DEPARTMENT_NO 학과코드명, COUNT(DECODE(ABSENCE_YN,'Y',1)) "휴학생 수"
 FROM TB_STUDENT
-WHERE ABSENCE_YN = 'Y'
 GROUP BY DEPARTMENT_NO
 ORDER BY DEPARTMENT_NO;
 
