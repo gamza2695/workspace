@@ -13,10 +13,11 @@ SELECT * FROM DEPARTMENT2;
 
 --------------------------------------------------------------------------------------------------------------------
 
--- INSERT
--- UPDATE
--- DELETE
--- TRUNCATE
+-- CRUD(CREATE, READ, UPDATE, DELETE)
+-- SELECT 
+-- INSERT 
+-- UPDATE 
+-- DELETE 
 
 -------------------
 
