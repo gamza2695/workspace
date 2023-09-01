@@ -64,8 +64,7 @@ public class JDBCExample3 {
 			// (SELECT 수행하면 ResultSet 반환..!!)
 			rs = stmt.executeQuery(sql);
 			
-			// 6. SQL(SELECT) 결과가 담겨있는 ResultSet(rs)를 한 행씩 반복 접근하며 
-			// 각 행의 컬럼 값을 얻어와 출력
+
 			while(rs.next()) {
 				// rs.next() : 한 행씩 이동해서 있으면 true, 없으면 false
 				
