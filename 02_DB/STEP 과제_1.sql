@@ -1,4 +1,6 @@
 
+------------------ [관리자 계정] ------------------
+
 -- 01. example 계정을 생성하고 개채생성, 변경, 제거권한과,DB연결 권한을 추가하고 
 --	   example2 계정을 생성하고 DB연결 권한과 VIEW 생성 권한을 추가한다.
 
@@ -14,7 +16,7 @@ QUOTA 20M ON "A230724";
 ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
 CREATE USER example2_jyj IDENTIFIED BY "4453";
 GRANT CONNECT, CREATE VIEW TO example2_jyj;
-ALTER USER example_jyj DEFAULT TABLESPACE "A230724"
+ALTER USER example2_jyj DEFAULT TABLESPACE "A230724"
 QUOTA 20M ON "A230724";
 
 
@@ -23,6 +25,10 @@ REVOKE CONNECT FROM example2_jyj;
 DROP USER example2_jyj CASCADE;
 
 
+
+
+ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
+DROP USER example_jyj CASCADE;
 
 
 
