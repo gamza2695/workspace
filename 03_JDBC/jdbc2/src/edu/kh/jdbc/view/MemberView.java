@@ -205,6 +205,30 @@ public class MemberView {
 		else System.out.println("아이디 또는 비밀번호 불일치");
 	}
 
+//	/**
+//	 * 비밀번호 변경
+//	 */
+//	private void updatePw() {
+//		System.out.println("\n***** 비밀번호 변경 *****\n");
+//
+//		System.out.print("변경할 이메일 : ");
+//		String email = sc.next();
+//
+//		System.out.print("현재 비밀번호 : ");
+//		String pw = sc.next();
+//
+//		System.out.print("새 비밀번호 : ");
+//		String newPw = sc.next();
+//
+//		// 굳이 Member 객체에 저장 안하고 전달해도 무관
+//		int result = service.updatePw(email, pw, newPw);
+//
+//		if(result > 0) System.out.println("비밀번호가 변경되었습니다");
+//		else		   System.out.println("아이디/비밀번호 불일치");
+//
+//
+//
+//	}
 
 
 }
