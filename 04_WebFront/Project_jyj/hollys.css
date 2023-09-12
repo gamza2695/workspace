@@ -1,0 +1,209 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+div, main, header, footer, section, article, nav, aside, form{
+  border: 1px solid black;
+}
+
+
+body{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+
+  /* min-height : 최소 높이(축소 불가), 
+  화면(브라우저)이 아무리 작아져도 지정된 높이만큼 표시 */
+  
+  /* max-height : 최대 높이(확대 불가), 
+  화면(브라우저)이 아무리 커져도 지정된 높이만큼 표시 */
+  
+  min-height: 100vh;
+}
+
+main{
+
+
+  flex-grow: 1; /* 중심축 방향 팽창 비율
+                main이 화면을 계속 차지하면서 footer를 밑으로 밀어냄 */
+  min-height: 500px;
+
+}
+/* -------------------------------------------header----------------------------------------------- */
+
+header{
+  height: 80px;
+  display: flex;
+}
+
+.title-ll{width: 25%;}
+.title-rr{width: 25%;}
+.title-c{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+/* --------------------------------------------content--------------------------------------------- */
+
+/* --------------nav---------------- */
+nav{ 
+  height: 50px;
+  margin: 0 25%;
+}
+
+nav > ul{
+  display: flex;
+  list-style: none; /* li 앞 기호 제거 */
+  height: 100%;
+}
+
+nav li{
+  flex : 0 1 150px; /* grow shrink basis 팽창 축소 너비 */
+}
+
+nav a{
+  text-decoration: none; /* 밑줄 제거 */
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 8px 0  11px; /* 상 좌우 하*/
+  display: block; /* 크기 지정하려고 변경(a inline형식임) */
+  text-align: center;
+
+  height: 100%;
+  border-radius: 5px;
+
+  /* 요소 스타일 변경 시간 */
+  transition-duration: 0.1s;
+
+}
+
+nav a:hover{
+  background-color: #ba000c;
+  color: white;
+}
+
+
+/* --------------view---------------- */
+.view {
+  height: 420px;
+}
+
+
+
+/* --------------main---------------- */
+
+.main-section{
+  height: 900px;
+  display: flex;
+  align-content: row;
+}
+
+.main-section-l{
+  width: 25%;
+}
+
+.main-section-c{
+  width: 50%;
+}
+
+.main-section-r{
+  width: 25%;
+}
+
+.information{
+  height: 30%;
+}
+
+.member{
+  height: 25%;
+}
+
+.board{
+  height: 25%;
+}
+
+.sns{
+  height: 20%;
+}
+
+
+/* --------------information---------------- */
+.information{
+  display: flex;
+  align-content: row;
+}
+.inform-l, .inform-r{
+  width: 25%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #faf9f7;
+  background-image: url(images/Franchise.gif) ;
+}
+.inform-l{background-image: url(images/Franchise.gif) ;}
+.inform-r{background-image: url(images/Store.jpg) ;}
+
+.inform-c{width: 50%;}
+
+.information div{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 20px;
+
+}
+
+
+/* --------------sns---------------- */
+
+.sns{
+  border-top: 2px solid #ba000c;
+  font-size: 23px;
+  font-weight: bold;
+  color: #303030; 
+  padding: 30px 5px;
+}
+
+
+
+
+
+/* -------------------------------------------footer----------------------------------------------- */
+
+
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: #ba000c;
+  display: flex;
+  align-content: row;
+  color: white;
+}
+
+.footer-l{width: 25%;}
+.footer-c{
+  width: 50%;
+  font-size: 10px;
+  margin-top: 20px;
+}
+.footer-r{width: 25%;}
+
+.footer-c > a{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-c > p{
+  color: #ffffff88; /* 투명도 추가 */
+  font-size: 8px;
+}
