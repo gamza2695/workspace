@@ -8,7 +8,7 @@ div{
 /* 4순위 : 클래스 선택자 */
 .cls1{
   background-color: green;
-
+}
 /* 3순위 : id 선택자 */
 #test1{
   background-color: black !important; /* 1순위 : !important */
@@ -27,4 +27,6 @@ div{
 }
 
 /* 2순위는 html 요소에 직접 작성!  */
+
+
 
