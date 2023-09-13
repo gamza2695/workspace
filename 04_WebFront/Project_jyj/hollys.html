@@ -7,24 +7,62 @@
 
   <link rel="stylesheet" href="../Project_jyj/hollys.css">
 
-</head>
-<body>
-  <!-------------------------------------------------------------------------------->
+  <style>
 
+    /* 폰트 3종 사용 */
+
+    @font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'S-CoreDream-3Light';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+  </style>
+
+
+
+</head>
+
+
+<body>
+  <!-------------------------------------header------------------------------------------->
 
   <header>
-    <section>
-      <img src="../Project_jyj/images/logo-l.JPG" alt="logo-left">
+
+    <!-- header 왼쪽 -->
+    <section class="header-l">
+      <a href="#"><img src="../Project_jyj/images/man.png" alt="man" class="man">창업설명회</a>
+      <span></span>
+      <a href="#"><img src="../Project_jyj/images/coffee-bean.png" alt="coffee" class="coffee">기업특판</a>
     </section>
-    <section>
-      <a href="#">
-        <img src="../Project_jyj/images/logo.gif" alt="home-logo">
-      </a>
+
+    <!-- header 중앙 할리스 로고  -->
+    <section class="logo">
+      <a href="#"><img src="../Project_jyj/images/logo.gif" alt="home-logo"></a>
     </section>
-    <section>
-      <a href="#">멤버십 로그인 &nbsp;</a>
-      <a href="#">멤버십 가입 &nbsp;</a>
-      <a href="#">고객센터 &nbsp;</a>
+
+    <!-- header 오른쪽 -->
+    <section class="header-r">
+      <a href="#">멤버십 로그인</a>
+      <span></span>
+      <a href="#">멤버십 가입</a>
+      <span></span>
+      <a href="#">고객센터</a>
+      <span></span>
       <a href="#">English</a>
     </section>
   </header>
@@ -33,8 +71,10 @@
 
 
 
-  <!-------------------------------------------------------------------------------->
+  <!---------------------------------------------main----------------------------------------------->
   <main>
+
+    <!----------------------- nav ----------------------->
 
     <nav>
       <ul>
@@ -48,123 +88,188 @@
     </nav>
 
 
-    <!-- <section class="view">
-      <ul>
-        <li><img src="../Project_jyj/images/view1.jpg" alt="view1"></li>
-        <li><img src="../Project_jyj/images/view2.jpg" alt="view2"></li>
-        <li><img src="../Project_jyj/images/view3.jpg" alt="view3"></li>
-      </ul>
-    </section> -->
+
+    <!----------------------- view ----------------------->
+
     <section class="view">
       <img src="../Project_jyj/images/view1.jpg" alt="view1">
     </section>
     
+
+    <!----------------------- information ----------------------->
     <section class="information">
+
+
+      <!--inform-left Rranchise 부분 -->
       <section class="inform-l">
-        <div>Franchise</div>
-        <a href="#"><img src="../Project_jyj/images/Franchise.gif" alt="Franchise"></a>
+        <div><img class="Franchise" src="../Project_jyj/images/man.png" alt="man"> Franchise</div>
+        <a href="#"><img src="../Project_jyj/images/Franchise.gif" alt="Franchise" class="franchise"></a>
       </section>
+
+
+      <!--inform-center HOLLYS MALL 부분 -->  
       <section class="inform-c">
-        <h1>HOLLYS MALL</h1>
-        <h3>할리스의 다양한 상품들을 온라인에서도 만나보세요.</h3>
+
+        <!-- 윗부분 -->
+        <section class="top">
+          <h1><img class="gift" src="../Project_jyj/images/gift.png" alt="gift"> HOLLYS MALL</h1>
+          <h3>할리스의 다양한 상품들을 온라인에서도 만나보세요.</h3>
+        </section>
+        
+        <!-- 디저트 사진 부분 -->
+        <section class="item">
+          <section class="apple">
+            <a href="#">
+              <img src="../Project_jyj/images/apple.png" alt="사과스무디">
+              문경 오미자 사과 스무디</a>
+          </section>
+          <section class="bam">
+            <a href="#"><img src="../Project_jyj/images/bam.png" alt="밤">
+            보늬밤 크림 라떼</a>
+          </section>
+          <section class="cake">
+            <a href="#"><img src="../Project_jyj/images/cake.png" alt="케이크">
+            보늬밤 치즈 케이크</a>
+          </section>
+        </section>
       </section>
+
+
+      <!--inform-right Store 부분 -->  
       <section class="inform-r">
-        <div>Store</div>
-        <a href="#"><img src="../Project_jyj/images/Store.jpg" alt="Store"></a>
+        <div><img src="../Project_jyj/images/maps.png" alt="maps" class="maps"> Store</div>
+        <a href="#"><img src="../Project_jyj/images/Store.jpg" alt="Store" class="store"></a>
       </section>
     </section>
 
-    
+
+
+    <!----------------------- member ----------------------->
+
     <section class="member">
+
+      <!-- 멤버십 -->
       <section class="membership">
         <a href="#"><img src="../Project_jyj/images/membership.jpg" alt="membership"></a>
       </section>
-      <section class="blank">
 
-      </section>
+      <!-- 카드 -->
       <section class="card">
         <a href="#"><img src="../Project_jyj/images/card.jpg" alt="card"></a>
       </section>
     </section>
     
 
-    <section class="board">
-      <pre class="board-1">
-        Event
-        WAY TO AUTUMN, 달콤한...          08-30
-        [멤버십 헤택] 할리스 멤버십...    08-30
-        할리스 신규 스페셜 블렌드, ...    06-20
-      </pre>
-      <pre class="board-2">
-        Hollys B2B Solution
-        할리스 F&B는 20년의 커피 노하우를
-        기반으로 한 할리스 B2B 솔루션을
-        소개합니다.
+    <!----------------------- board ----------------------->
 
-        바로가기
-      </pre>
-      <section class="board-3"></section>
-      <section class="board-4"></section>
+    <section class="board">
+
+      <!-- Event 게시판 -->
+      <section class="board-1">
+        <div><a href="#" class="A"><img src="../Project_jyj/images/event.png" alt="event" class="event">Event</a></div> <br>
+        <a href="#">WAY TO AUTUMN, 달콤한...  08-30 </a><br>
+        <a href="#">[멤버십 헤택] 할리스 멤버십...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08-30 </a><br>
+        <a href="#">할리스 신규 스페셜 블렌드, ...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;06-20</a>
+      </section>
+
+
+      <!-- Hollys B2B Solution 게시판 -->
+      <section class="board-2">
+        <div><a href="#" class="A"><img src="../Project_jyj/images/bag.png" alt="bag" class="bag">Hollys B2B Solution</div></a><br>
+        할리스 F&B는 20년의 커피 노하우를 <br>
+        기반으로 한 할리스 B2B 솔루션을 <br>
+        소개합니다.<br>
+        <a href="#">▶바로가기</a>
+      </section>
+
+
+      <!-- News 게시판 -->
+      <section class="board-3">
+        <div><a href="#" class="A"><img src="../Project_jyj/images/speaker.png" alt="speaker" class="speaker">News</a></div><br>
+        <a href="#">[공고] 제3자 배정 유상증자...  &nbsp;&nbsp;&nbsp;&nbsp;05-03 </a><br>
+        <a href="#">개인정보처리방침 변경 안내   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10-06 </a><br>
+        <a href="#">중간배당 기준일 공고
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10-14</a>
+      </section>
+
+
+      <!-- 창업안내 / 고객문의 -->
+      <section class="board-4">
+        
+        <section class="board-4-1"></section>
+        
+        <!-- 창업안내 -->
+        <section class="board-4-2">
+          <a href="#"><img src="../Project_jyj/images/board-4-1.gif" alt="board-4-1"><br><br>
+            창업안내</a>
+        </section>
+
+        <!-- 고객문의 -->
+        <section class="board-4-3">
+          <a href="#"><img src="../Project_jyj/images/board-4-2.gif" alt="board-4-2"><br><br>
+          고객문의</a>
+        </section>
+      </section>
+
+
     </section>
 
 
+    <!----------------------- sns ----------------------->
     <section class="sns">
       HOLLYS Live 
-      <a href="#"><img src="../Project_jyj/images/sns_facebook.gif" alt="facebook"></a>
-      <a href="#"><img src="../Project_jyj/images/sns_instagram.gif" alt="instagram"></a>
+      <a href="https://www.facebook.com/EnjoyHollys" target="_blank">
+        <img src="../Project_jyj/images/sns_facebook.gif" alt="facebook"></a>
+      <a href="https://www.instagram.com/hollyscoffee.official/"target="_blank">
+        <img src="../Project_jyj/images/sns_instagram.gif" alt="instagram"></a>
       
     </section>
 
     
-    
-
 
   </main>
+
+
+  <!----------------------- 가맹문의 고정 아이콘 ----------------------->
 
   <div class="fixed-area">
     <a href="#"><img src="../Project_jyj/images/gamaeng.JPG" alt="가맹">가맹문의</a>
   </div>
 
 
-  <!-------------------------------------------------------------------------------->
+  <!---------------------------------------------footer----------------------------------------------->
 
   <footer>
-
-
-    <div class="footer">
-
-      <article class="footer-c">
-        <a href="#">개인정보처리방침</a>
-        <span>|</span>
-        <a href="#">서비스이용약관</a>
-        <span>|</span>
-        <a href="#">멤버십이용약관</a>
-        <span>|</span>
-        <a href="#">할리스카드이용약관</a>
-        <span>|</span>
-        <a href="#">고객문의</a>
-        <span>|</span>
-        <a href="#">고객설문</a>
-        <span>|</span>
-        <a href="#">사이트맵</a>
-        <span>|</span>
-        <a href="#">BI 소개</a>
+    
+    <article class="footer-c">
+      <a href="#">개인정보처리방침</a>
+      <span>|</span>
+      <a href="#">서비스이용약관</a>
+      <span>|</span>
+      <a href="#">멤버십이용약관</a>
+      <span>|</span>
+      <a href="#">할리스카드이용약관</a>
+      <span>|</span>
+      <a href="#">고객문의</a>
+      <span>|</span>
+      <a href="#">고객설문</a>
+      <span>|</span>
+      <a href="#">사이트맵</a>
+      <span>|</span>
+      <a href="#">BI 소개</a>
   
-        <br><br>
+      <br><br>
   
-        <p>
-          법인명: (주) 케이지할리스에프앤비 대표자: 이종현 사업자등록번호 211-87-61044 통신판매업: 제2019-서울종로-0193호 <br>
-          주소 : 서울특별시 중구 통일로 92, 9층(순화동, 케이지타워) 대표전화 : 02-2188-7100 (가맹문의 : 02-6350-7229) <br>
-          COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.
-        </p>
+      <p>
+        법인명: (주) 케이지할리스에프앤비 대표자: 이종현 사업자등록번호 211-87-61044 통신판매업: 제2019-서울종로-0193호 <br>
+        주소 : 서울특별시 중구 통일로 92, 9층(순화동, 케이지타워) 대표전화 : 02-2188-7100 (가맹문의 : 02-6350-7229) <br>
+        COPYRIGHT (C) KG HOLLYS F&B. All Rights Reserved.
+      </p>
   
-        <section class="footer-r"></section>
+      <section class="footer-r"></section>
   
-      </article>
-
-
-    </div>
-
+    </article>
 
   </footer>
 

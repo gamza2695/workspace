@@ -45,7 +45,6 @@
 
 /* align self */
 .self-test{align-items: flex-start;}
-
 .self-start{align-self: flex-start;}
 .self-end{align-self: flex-end;}
 .self-center{align-self: center;}
