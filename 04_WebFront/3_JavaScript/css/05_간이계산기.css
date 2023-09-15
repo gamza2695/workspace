@@ -1,0 +1,16 @@
+.outbox{
+  width: 400px;
+  border: 1px solid salmon;
+  padding : 10px 30px 20px;
+  border-radius: 30px;
+  background-color: rgb(255, 235, 233);
+}
+
+button{
+  background-color: salmon;
+  border-radius: 5px;
+}
+
+.outbox div{
+  padding-bottom: 7px;
+}

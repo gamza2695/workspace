@@ -36,7 +36,7 @@ function classTest(){
 
 }
 
-//tag로 접근하기-------------------------------------------------------
+// tag로 접근하기-------------------------------------------------------
 function tagTest(){
 
   // 태그명이 li인 요소 모두 얻어오기
@@ -50,7 +50,7 @@ function tagTest(){
 }
 
 
-//name으로 접근하기-------------------------------------------------------
+// name으로 접근하기-------------------------------------------------------
 function nameTest(){
   
   // name 속성값이 hobby인 요소 모두 얻어오기
@@ -83,7 +83,7 @@ function nameTest(){
 }
 
 
-//CSS 선택자로 접근하기-------------------------------------------------------
+// CSS 선택자로 접근하기-------------------------------------------------------
 function cssTest(){
   // querySelector("선택자") : 1개만 얻어옴(여러 요소 있으면 첫번째)
   // querySelectorAll("선택자") : 모두 얻어옴
@@ -100,3 +100,48 @@ function cssTest(){
   arr[0].style.backgroundColor = "tomato";
   arr[1].style.backgroundColor = "yellow";
 }
+
+
+// 카카오톡 채팅 화면 만들기-------------------------------------------------------
+function readValue(){
+  const bg = document.querySelector("#chatting-bg");
+  const input = document.querySelector("#user-input");
+
+  // 입력요소.value : 값 읽어오기
+  // "문자열".length : 문자열의 길이
+  // "문자열".trim() : 양쪽 공백 제거
+  // 입력요소.value.trim().length == 0 : 아무것도 입력하지 않음
+
+  if(input.value.trim().length==0){
+    alert("채팅 내용을 입력해주세요")
+  }
+  else{ // 입력했을 때
+    bg.innerHTML += "<p><span>" + input.value + "</span></p>";
+
+    // 요소.scrollHeight : 스크롤 전체 높이
+    // 요소.scrollTop : 요소 내부 스크롤의 위치 반환
+    // 요소.scrollTop : 높이 -> 이렇게 지정하면 스크롤 위치를 해당 높이로 이동
+    console.log(bg.scrollHeight);
+    bg.scrollTop = bg.scrollHeight;
+  }
+
+  // input에 작성된 값 지우기
+  input.value = ""; // 빈 문자열을 값으로 대입
+
+  // input에 포커스 맞추기
+  input.focus(); // 요소.focus() : 해당 요소에 포커스 맞춤
+}
+
+// 아이디가 user-input인 요소에서
+// 키보드 키가 올라올 때(keyup)에 대한 동작(function(){})을 수행해라
+document.querySelector("#user-input").addEventListener("keyup", function(e){
+
+  // e : 이벤트 객체(발생한 이벤트 정보를 가지고 있는 객체)
+  // e.key : 입력한 키 반환
+  // console.log(e.key);
+
+  if(e.key=="Enter") {// 엔터키를 입력한 경우
+    readValue();
+  }
+
+})

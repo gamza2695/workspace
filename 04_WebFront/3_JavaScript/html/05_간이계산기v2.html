@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05_간이 계산기v2</title>
+
+  <link rel="stylesheet" href="../css/05_간이계산기.css"> 
+
+</head>
+<body>
+
+  <div class="outbox">
+
+    <h1>간이 계산기 만들기v2</h1>
+  
+      <div>
+        첫번째 값 : <input type="text" id="num1">       
+      </div>
+      <div>
+        두번째 값 : <input type="text" id ="num2">
+      </div>
+  
+    <button onclick="calc('+')">+</button>
+    <button onclick="calc('-')">-</button>
+    <button onclick="calc('*')">*</button>
+    <button onclick="calc('/')">/</button>
+    <button onclick="calc('%')">%</button>
+    
+    <br><br>
+  
+    계산결과 : <span id="output"></span>
+  </div>
+
+
+  <script src="../js/05_간이계산기v2.js"></script>
+  
+</body>
+</html>
