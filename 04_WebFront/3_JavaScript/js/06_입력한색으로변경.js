@@ -13,16 +13,12 @@
 //    ex. 박스[0], 입력[0]은 위아래로 붙어있다
 //    ex. 박스[1], 입력[1]은 위아래로 붙어있다
 
-
-
+const innerbox = document.getElementsByClassName("innerbox");
+const colorArr = document.getElementsByClassName("color");
 
 function changecolor(){
-
-  const innerbox = document.getElementsByClassName("innerbox");
-  const colorArr = document.getElementsByClassName("color");
-
   for(let i=0; i<innerbox.length; i++){
-    innerbox[i].style.backgroundColor = colorArr[i].innerText;
+    innerbox[i].style.backgroundColor = colorArr[i].value;
   }
 
 }

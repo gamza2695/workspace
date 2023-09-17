@@ -1,12 +1,12 @@
-
-
 .box{
   width: 1100px;
-  padding-top: 150px;
-  margin: auto;
-
+  margin: 150px auto 50px;
+  text-align: center;
 }
 
+.button{
+  margin-top: 30px;
+}
 
 .outerbox{
   width: 200px;
@@ -16,13 +16,10 @@
   padding: 10px;
 }
 
-.outerbox div{
+.innerbox{
   width: 100%;
   height: 85%;
   border: 1px solid black;
-}
-
-.innerbox{
   transition-duration: 2s;
 }
 
@@ -32,12 +29,6 @@ input{
   padding: 0;
 }
 
-.button{
-  margin: 50px 0 0 100px ;
-}
-button:hover{
-  background-color: rgb(78, 86, 201);
-}
 
 button{
   width: 800px;
@@ -48,4 +39,7 @@ button{
   font-size: 18px;
   font-weight: bold; 
   cursor: pointer;
+}
+button:hover{
+  background-color: rgb(78, 86, 201);
 }

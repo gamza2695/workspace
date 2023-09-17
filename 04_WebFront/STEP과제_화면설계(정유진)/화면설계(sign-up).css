@@ -1,0 +1,45 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-family: 'S-CoreDream-3Light';
+}
+
+h2{
+    margin: 25px 0 35px;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+.sign-up-box{
+    width: 400px;
+    height: 460px;
+    border: 2px solid #d8d8d8;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+form{
+    margin: 10px;
+    font-size: 13px;
+}
+
+input{
+    width: 200px;
+}
+
+button{
+    width: 380px;
+    height: 30px;
+    font-family: 'S-CoreDream-3Light';
+    font-weight: bold;
+    border: 1px solid rgb(115, 116, 122);
+    background-color: rgb(234, 241, 255);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
