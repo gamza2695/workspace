@@ -24,27 +24,22 @@ function inlineEventModel(btn){
 const a = document.getElementById("test2-1");
 
 // 요소.이벤트리스너 = 이벤트 핸들러
-a.onclick = function(){
-  // function(){} : 익명 함수(이벤트 핸들러로 많이 사용)
+a.onclick = function(){ // function(){} : 익명 함수(이벤트 핸들러로 많이 사용)
   alert("test2-1 클릭");
 }
 
-
-// 이벤트 제거
-// #test2-2 클릭 시 #test2-1의 클릭 이벤트 제거
+// 이벤트 제거 : #test2-2 클릭 시 #test2-1의 클릭 이벤트 제거
 const b = document.querySelector("#test2-2");
 
 b.onclick = function(){
   // a == #test2-1
-
   // #test2-1의 onclick 속성에 null을 대입해서 덮어쓰기
   a.onclick = null; 
   alert("#test2-1 이벤트 제거");
 }
 
 // 고전 이벤트 모델 단점
-// -> 한 요소의 같은 이벤트리스너에 
-//    여러 이벤트 핸들러를 대입할 수 없다
+// -> 한 요소의 같은 이벤트리스너에 여러 이벤트 핸들러를 대입할 수 없다
 
 const c = document.querySelector("#test2-3");
 
@@ -53,8 +48,7 @@ c.onclick = function(){
   c.style.backgroundColor = "yellow";
 }
 
-
-// #test2-3 클릭 시 버튼의 글자 크기를 30px로 변경
+// #test2-3 클릭 시 버튼의 글자 크기를 30px로 변경 => 최종적으로 이것만 적용
 c.onclick = function(){
   c.style.fontSize = '30px';
 }
@@ -111,6 +105,7 @@ document.getElementById("test3").addEventListener("click", function(e){
 
 
 // =============================================================== //
+/* 입력한 색상으로 배경색 변경 */
 
 const btn4 = document.getElementById("btn4");
 const box = document.getElementById("box4");
@@ -133,7 +128,7 @@ color.addEventListener('keyup', function(e){
 
 
 
-
+// =============================================================== //
 /* a태그 기본 이벤트 제거 */
 document.getElementById('move').addEventListener("click",function(e){
 

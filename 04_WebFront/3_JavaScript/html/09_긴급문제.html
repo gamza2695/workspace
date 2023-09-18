@@ -11,65 +11,60 @@
 <body>
 
 
-  <table border="1">
+  <table>
     <tr>
-      <td>
-        너비 : <input type="text" id="width"> px 
-      </td>
-      <td>
-        높이 : <input type="text"> px
-      </td>
+      <th>너비 : </th>
+      <td><input type="text" id="width"> px </td>
+      <th>높이 : </th>
+      <td><input type="text" id="height"> px</td>
     </tr>
   
     <tr>
+      <th>글자크기 : </th>
+      <td> <input type="text" id="font-size"> px</td>
+      <th>굵기 : </th>
       <td>
-        글자크기 : <input type="text"> px
-      </td>
-      <td>
-        굵기 : 
-        <label for="normal">보통</label> <input type="radio" name="fontweight" id="normal">
-        <label for="bold">굵게</label> <input type="radio" name="fontweight" id="bold">
+        <label for="normal">보통</label> <input type="radio" name="fw" value="normal">
+        <label for="bold">굵게</label> <input type="radio" name="fw" value="bold">
       </td>
     </tr>
 
     <tr>
-      <td>
-        글자색 : <input type="text">
-      </td>
-      <td>
-        배경색 : <input type="text">
+      <th>글자색 : </th>
+      <td><input type="text" id="font-color"></td>
+      <th>배경색 : </th>
+      <td><input type="text" id="back-color"></td>
+    </tr>
+
+    <tr>
+      <th>가로정렬 : </th>
+      <td colspan = "3">
+        <label for="left">왼쪽</label> <input type="radio" name="horizon" value="left">
+        <label for="center">가운데</label> <input type="radio" name="horizon" value="center">
+        <label for="right">오른쪽</label> <input type="radio" name="horizon" value="right">
       </td>
     </tr>
 
     <tr>
-      <td colspan = "2">
-        가로정렬 : 
-        <label for="left">왼쪽</label> <input type="radio" name="rowset" id="left">
-        <label for="center">가운데</label> <input type="radio" name="rowset" id="center">
-        <label for="right">오른쪽</label> <input type="radio" name="rowset" id="right">
+      <th>세로정렬 : </th>
+      <td colspan = "3">
+        <label for="top">위</label> <input type="radio" name="vertical" value="top">
+        <label for="middle">가운데</label> <input type="radio" name="vertical" value="middle">
+        <label for="bottom">아래</label> <input type="radio" name="vertical" value="bottom">
       </td>
     </tr>
 
     <tr>
-      <td colspan = "2">
-        세로정렬 : 
-        <label for="top">위</label> <input type="radio" name="colset" id="top">
-        <label for="center-r">가운데</label> <input type="radio" name="colset" id="center-r">
-        <label for="bottom">아래</label> <input type="radio" name="colset" id="bottom">
-      </td>
-    </tr>
-
-    <tr>
-      <td colspan = "2">
-        출력 문자열 : <input type="text">
-      </td>
+      <th>출력 문자열 : </th>
+      <td colspan = "3"><input type="text" id="message"></td>
     </tr>
 
   </table>
 
-  <button id="create-btn">적용하기</button>
+  <button id="btn">적용하기</button>
 
-  <div class="view"></div>
+  <div class="view" id="view"></span></div>
+  <!-- <div class="view" id="view"><span id="innerView"></span></div> -->
 
 
   <script src="../js/09_긴급문제.js"></script>

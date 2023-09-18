@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.view{
+    margin-top: 50px;
+    width: 5px;
+    height: 5px;
+    border: 1px solid black;
+}
