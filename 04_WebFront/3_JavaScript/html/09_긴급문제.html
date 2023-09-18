@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09_긴급문제 2</title>
+
+  <link rel="stylesheet" href="../css/09_긴급문제.css">
+
+</head>
+<body>
+
+
+  <table border="1">
+    <tr>
+      <td>
+        너비 : <input type="text" id="width"> px 
+      </td>
+      <td>
+        높이 : <input type="text"> px
+      </td>
+    </tr>
+  
+    <tr>
+      <td>
+        글자크기 : <input type="text"> px
+      </td>
+      <td>
+        굵기 : 
+        <label for="normal">보통</label> <input type="radio" name="fontweight" id="normal">
+        <label for="bold">굵게</label> <input type="radio" name="fontweight" id="bold">
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        글자색 : <input type="text">
+      </td>
+      <td>
+        배경색 : <input type="text">
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan = "2">
+        가로정렬 : 
+        <label for="left">왼쪽</label> <input type="radio" name="rowset" id="left">
+        <label for="center">가운데</label> <input type="radio" name="rowset" id="center">
+        <label for="right">오른쪽</label> <input type="radio" name="rowset" id="right">
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan = "2">
+        세로정렬 : 
+        <label for="top">위</label> <input type="radio" name="colset" id="top">
+        <label for="center-r">가운데</label> <input type="radio" name="colset" id="center-r">
+        <label for="bottom">아래</label> <input type="radio" name="colset" id="bottom">
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan = "2">
+        출력 문자열 : <input type="text">
+      </td>
+    </tr>
+
+  </table>
+
+  <button id="create-btn">적용하기</button>
+
+  <div class="view"></div>
+
+
+  <script src="../js/09_긴급문제.js"></script>
+
+
+</body>
+</html>
