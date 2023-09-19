@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.view{
+    margin-top: 50px;
+    width: 5px;
+    height: 5px;
+    border: 2px solid black;
+    display: flex;
+    
+    /* 영단어 나누기 */
+    word-break: break-all;
+}

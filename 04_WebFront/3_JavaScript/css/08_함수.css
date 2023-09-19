@@ -1,0 +1,21 @@
+body{
+  padding : 10px;
+}
+
+code{
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid rgb(78, 78, 78);
+  background-color: rgb(255, 233, 237);
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'D2Coding';
+  white-space: pre-wrap; /* 내용을 작성된 형태 그대로 출력(pre태그) */
+  display: block;
+}
+
+.important{
+  color : red;
+  font-size: 40px;
+  background-color: khaki;
+}

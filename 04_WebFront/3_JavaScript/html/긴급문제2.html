@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>09_긴급문제 2</title>
 
-  <link rel="stylesheet" href="../css/09_긴급문제.css">
+  <link rel="stylesheet" href="../css/긴급문제2.css">
 
 </head>
 <body>
@@ -20,8 +20,8 @@
     </tr>
   
     <tr>
-      <th>글자크기 : </th>
-      <td> <input type="text" id="font-size"> px</td>
+      <th>글자크기 : </th> 
+      <td> <input type="text" id="font-size"> px</td> <!-- font-size 같은이름 피하기! -->
       <th>굵기 : </th>
       <td>
         <label for="normal">보통</label> <input type="radio" name="fw" value="normal">
@@ -39,18 +39,18 @@
     <tr>
       <th>가로정렬 : </th>
       <td colspan = "3">
-        <label for="left">왼쪽</label> <input type="radio" name="horizon" value="left">
-        <label for="center">가운데</label> <input type="radio" name="horizon" value="center">
-        <label for="right">오른쪽</label> <input type="radio" name="horizon" value="right">
+        <label>왼쪽</label> <input type="radio" name="horizon" value="flex-start">
+        <label>가운데</label> <input type="radio" name="horizon" value="center">
+        <label>오른쪽</label> <input type="radio" name="horizon" value="flex-end">
       </td>
     </tr>
 
     <tr>
       <th>세로정렬 : </th>
       <td colspan = "3">
-        <label for="top">위</label> <input type="radio" name="vertical" value="top">
-        <label for="middle">가운데</label> <input type="radio" name="vertical" value="middle">
-        <label for="bottom">아래</label> <input type="radio" name="vertical" value="bottom">
+        <label>위</label> <input type="radio" name="vertical" value="flex-start">
+        <label>가운데</label> <input type="radio" name="vertical" value="center">
+        <label>아래</label> <input type="radio" name="vertical" value="flex-end">
       </td>
     </tr>
 
@@ -64,10 +64,8 @@
   <button id="btn">적용하기</button>
 
   <div class="view" id="view"></span></div>
-  <!-- <div class="view" id="view"><span id="innerView"></span></div> -->
 
-
-  <script src="../js/09_긴급문제.js"></script>
+  <script src="../js/긴급문제2.js"></script>
 
 
 </body>

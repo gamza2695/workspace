@@ -142,8 +142,8 @@ document.getElementById('move').addEventListener("click",function(e){
 
 /* form 태그 기본 이벤트 제거 */
 
-// 방법1. e.preventDefault()
-// form 태그가 제출되었을 때
+// // 방법1. e.preventDefault()
+// // form 태그가 제출되었을 때
 // document.getElementById('login').addEventListener("submit", function(e){
 
 //   //alert("제출되었습니다.");
@@ -152,20 +152,20 @@ document.getElementById('move').addEventListener("click",function(e){
 // })
 
 
-// 방법 2,3은 참고
-// 방법 2. 인라인 이벤트 모델 onsubmit 이용
-function testFn(){
-  const id = document.getElementById("input-id");
-  const pw = document.getElementById("input-pw");
+// // 방법 2,3은 참고
+// // 방법 2. 인라인 이벤트 모델 onsubmit 이용
+// function testFn(){
+//   const id = document.getElementById("input-id");
+//   const pw = document.getElementById("input-pw");
 
-  // 아이디 또는 비밀번호를 입력하지 않았을 때
-  if(id.value.trim().length == 0 || pw.value.trim().length == 0){
-    return false;
-  }
+//   // 아이디 또는 비밀번호를 입력하지 않았을 때
+//   if(id.value.trim().length == 0 || pw.value.trim().length == 0){
+//     return false;
+//   }
   
-  // 둘 다 입력한 경우
-  return true;
-}
+//   // 둘 다 입력한 경우
+//   return true;
+// }
 
 // 방법 3. 일반 버튼 클릭으로 제출 막음
 
@@ -176,7 +176,7 @@ loginBtn2.addEventListener("click", function(){
   const pw = document.getElementById("input-pw");
 
   // 아이디, 비밀번호 둘다 입력했을 때
-  if(id.value.trim().length != 0 && pw.value.trim().length != 0){
+  if(id.value.trim().length != 0   && pw.value.trim().length != 0){
 
     /* document.form태그 name속성 == 해당 form 요소 선택 */
     /* form 요소.submit() : form 제출 */
@@ -184,6 +184,9 @@ loginBtn2.addEventListener("click", function(){
     document.loginForm.submit();
   }
 });
+
+
+
 
 // =============================================================== //
 
