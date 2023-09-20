@@ -4,7 +4,7 @@ const count = document.querySelector("#count");
 const increment = document.querySelector("#increment");
 
 
-// 카운트 장가 함수 선언
+// 카운트 증가 함수 선언
 function countIncrement(){
   // 정의
   // +조건 : 10을 초과하면 0으로 초기화
