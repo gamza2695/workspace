@@ -1,0 +1,35 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.row div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  font-size: 40px;
+} 
+
+.result{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+.num:hover{
+  background-color: skyblue;
+}
+
+.num:active{
+  background-color: orangered;
+}
