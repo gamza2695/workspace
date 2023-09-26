@@ -19,7 +19,7 @@
 //   clickNum.innerText = '';
 // })
 
-const numberList = document.querySelectorAll(".number");
+const numberList = document.querySelectorAll(".num");
 
 for(let num of numberList){
   num.addEventListener("click", e=>{
