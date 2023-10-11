@@ -28,17 +28,17 @@ import lombok.ToString;
 @ToString // toString 자동 완성
 
 public class Member {
-
+	
+	private int memberNo;
 	private String memberEmail;
 	private String memberPw;
-	private String memberNmae;
-
-	
-	
-
-	
-	
-	
+	private String memberNickname;
+	private String memberTel;
+	private String memberAddress;
+	private String profileImg;
+	private String enrollDate;
+	private String memberDelFl;
+	private int authority;
 	
 	
 }
