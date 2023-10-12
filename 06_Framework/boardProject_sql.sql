@@ -63,8 +63,12 @@ SELECT * FROM "MEMBER" ;
 
 
 
+-- 샘플 회원 비밀번호 변경(암호화 적용)
+UPDATE "MEMBER" SET
+MEMBER_PW = '$2a$10$SfXXkau1eVAvJFC2bCT9Pe9AGVXchy2j5Ag..CCq.Dbq3L1aVa9vy'
+WHERE MEMBER_NO=1;
 
-
+COMMIT;
 
 
 
