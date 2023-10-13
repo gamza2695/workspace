@@ -195,7 +195,7 @@ public class MemberController {
 		
 		// [작성법]
 		// 1) RedirectAttributes를 메서드 매개변수에 추가
-		// 2) RedirectAttributes.addFlashAttribute("Key", vale)
+		// 2) RedirectAttributes.addFlashAttribute("Key", value)
 		
 		if(loginMember == null) { // 로그인 실패 시
 			ra.addFlashAttribute("message", "아이디 또는 비밀번호가 일치하지 않습니다");
