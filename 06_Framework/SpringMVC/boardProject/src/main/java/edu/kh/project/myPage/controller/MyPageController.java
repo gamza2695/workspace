@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
 import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.project.member.model.dto.Member;
@@ -167,6 +168,46 @@ public class MyPageController {
 		
 		ra.addFlashAttribute("message",message);
 		
+		return path;		
+	}
+	
+	
+	/** 회원 탈퇴
+	 * @param memberPw : 현재 비밀번호
+	 * @param loginMember : 로그인한 회원 정보
+	 * @param ra : 리다이렉트 시 데이터 전달
+	 * @param status : 세션 상태 관리(만료 시 사용)
+	 * @return
+	 */
+	@PostMapping("secession")
+	public String secession(
+			String memberPw,
+			@SessionAttribute("loginMember") Member loginMember,
+			RedirectAttributes ra,
+			SessionStatus status) {
+		
+		// 1. 로그인한 회원 번호 얻어오기
+		int memberNo = loginMember.getMemberNo();
+		
+		// 2. 회원 탈퇴 서비스 호출 후 결과 반환 받기
+		int result = service.secession(memberPw, memberNo);
+		
+		// 3. 서비스 결과에 따라 응답 처리
+		
+		String path = null;
+		String message = null;
+		
+		if(result > 0) { // 성공
+			message = "탈퇴 되었습니다";
+			path = "redirect:/"; // 메인페이지 재ㅛㅇ청
+			status.setComplete(); // 세션 ㅁ나료
+			
+		} else { // 실패
+			message = "비밀번호가 일치하지 않습니다";
+			path = "redirect:secession"; // 탈퇴 페이지 요청
+		}
+		
+		ra.addFlashAttribute("message", message);
 		return path;		
 	}
 	

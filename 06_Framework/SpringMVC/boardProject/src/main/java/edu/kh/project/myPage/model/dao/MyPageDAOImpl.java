@@ -1,5 +1,7 @@
 package edu.kh.project.myPage.model.dao;
 
+import java.util.Map;
+
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -27,5 +29,25 @@ public class MyPageDAOImpl implements MyPageDAO{
 		// 마이바티스 객체를 이용해서 update 수행
 		// sqlSession.update("namespace값.id값", 파라미터);
 		return sqlSession.update("myPageMapper.info", updateMember);
+	}
+	
+	
+	@Override
+	public String selectMemberPw(int memberNo) {
+		
+		return sqlSession.selectOne("myPagerMapper.selectMemberPw", memberNo);
+	}
+	
+	
+	
+	@Override
+	public int changePw(Map<String, Object> map) {
+		return sqlSession.update("myPageMapper.changePw", map);
+	}
+	
+	
+	@Override
+	public int secession(int memberNo) {
+		return sqlSession.update("myPageMapper.secession",memberNo);
 	}
 }
