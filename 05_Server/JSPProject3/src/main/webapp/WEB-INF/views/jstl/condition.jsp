@@ -47,7 +47,7 @@
 
   <ul>
     <li>menu : ${menu}</li>
-    <li>menu : ${price}</li>
+    <li>price : ${price}</li>
     <li>menu : ${money}</li>
   </ul>
 

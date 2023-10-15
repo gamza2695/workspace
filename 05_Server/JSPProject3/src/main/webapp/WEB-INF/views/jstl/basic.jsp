@@ -74,7 +74,7 @@
     - 속성
       1) var : 제거할 변수명(== 속성 Key)
       
-      2) scope : 지정된 scope의 변수만 제거할
+      2) scope : 지정된 scope의 변수만 제거
                 (기본값은 모든 scope 일괄 제거) 
   </pre>
 
