@@ -77,7 +77,6 @@ header a{
 /* searchbar */
 .searchbar{
   height: 100px;
-  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,14 +85,16 @@ header a{
 .search-content{
   height: 4rem;
   width: 80vh;
-  border: 1px solid black;
+  border: 2px solid var(--main-color);
   border-radius: 50px 0px 0px 50px;
 }
 
 .searchbar>button{
   height: 4rem;
   width: 50px;
+  border: none;
   border-radius: 0px 50px 50px 0px;
+  cursor: pointer;
 }
 /* =========================================================== */
 
