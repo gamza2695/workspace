@@ -53,7 +53,7 @@ public class MemberServiceImpl implements MemberService {
 		
 		// 주소가 입력되지 않은 경우
 		if(inputMember.getMemberAddress().equals(",,")) {
-			inputMember.setMemberAddress(null);
+			inputMember.setMemberAddress(null); // null로 변환
 		} else { // 주소를 입력한 경우
 			// 배열 -> 문자열로 합쳐서 inputMember에 추가
 			String address = String.join("^^^", memberAddress);
