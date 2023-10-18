@@ -104,4 +104,17 @@ MEMBER_DEL_FL = 'Y'
 WHERE MEMBER_NO = 2;
 
 
+DELETE FROM "MEMBER"
+WHERE MEMBER_EMAIL = 'member100@gmail.com';
+
+COMMIT;
+
+-- 관리자 권한으로 변경
+UPDATE "MEMBER" SET
+AUTHORITY =2
+WHERE MEMBER_EMAIL ='member01@naver.com';
+
+COMMIT;
+
+
 
