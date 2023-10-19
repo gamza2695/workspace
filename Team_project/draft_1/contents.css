@@ -81,12 +81,12 @@ header a{
 
 .contents-outerbox{
   width: 98%;
-  height: 120rem;
+  height: 130rem;
   border: 0.1rem solid var(--footer-color);
 }
 
 .contents{
-  height: 65%;
+  height: 85rem;
   padding: 0 1rem;
 }
 
@@ -94,7 +94,7 @@ header a{
 /* 리뷰 헤드 - 제목, 평점, 찜,주소 */
 
 .contents-head{
-  height: 15%;
+  height: 15rem;
   display: flex;
   flex-direction: row;
 }
@@ -129,14 +129,14 @@ header a{
 /* 리뷰 내용 - 사진, 평가, 메뉴, 한줄평 */
 
 .contents-main{
-  height: 80%;
+  height: 65rem;
   display: flex;
   flex-direction: row;
 }
 
 .main-1{
   width: 55%;
-  padding: 1rem 2rem 1rem 1rem;
+  padding: 0rem 2rem 1rem 1rem;
 }
 .main-1 > img{
   width: 100%;
@@ -172,11 +172,15 @@ header a{
   background-color: var(--footer-color);
 }
 
+#review-total{
+  height: 100%;
+}
 
 /* =========================================================== */
 /* 조회수, 신고하기 */
 
 .contents-foot{
+  height: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -202,7 +206,7 @@ header a{
 /* 댓글 */
 
 .comments{
-  height: 35%;
+  height: 45rem;
   padding: 1rem;
 }
 
@@ -213,7 +217,7 @@ header a{
 }
 
 .comments-outerbox{
-  height: 90%;
+  height: 35rem;
   border-radius: 5rem;
   background-color: var(--footer-color);
 }
@@ -250,9 +254,13 @@ header a{
 /* =========================================================== */
 
 /* 다른 리뷰 */
+
+.other-reviews{
+  height: 50rem;
+}
+
 .other-reviews-con{
-  margin-top: 2rem;
-  padding: 0 2rem;
+  padding: 2rem;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -260,10 +268,8 @@ header a{
 .items-row{
   display: flex;
   flex-direction: row;
-  height: 40rem;
   justify-content: space-evenly;
   align-items: center;
-  padding: 2rem 0 0 0;
   margin-bottom: 10rem;
 }
 
@@ -285,7 +291,7 @@ header a{
 
 .items-title{
   height: 10%;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   font-size: 2rem;
   font-weight: bold;
 
