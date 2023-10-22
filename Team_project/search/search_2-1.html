@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>검색 후 - 가게 평점순</title>
+  <title>검색 후 - 평점순</title>
 
-  <link rel="stylesheet" href="/draft_1/search_2-1.css">
+  <link rel="stylesheet" href="search_2-1.css">
   <script src="https://kit.fontawesome.com/39f6050202.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -34,7 +34,7 @@
 
     <!-- 검색바 영역 -->
     <section class="search">
-      <input class="searchInput">
+      <input class="searchInput" style="color: #66b97e;">
       <button><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #66b97e;"></i></button>
     </section>
 
@@ -50,46 +50,64 @@
 
     <!-- 리뷰 목록 영역 -->
     <section class="review-row">
-      
       <article class="review-col">
         <a href="#"  id="review-img">
           <img src="/draft_1/images/image-1.jpg" alt="image-1">
         </a>
-        <section id="rankNo">#1</section>
-        <section id="title"><a href="#">칠리칠리</a></section>
-        <section class="nickname-star-date">
-          <section id="star" style="color: #f1c93b;">4.5
-            <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
-          </section>
+
+        <div class="rankNo-title">
+          <section id="rankNo">#1</section>
+          <section id="title"><a href="#">칠리칠리</a></section>
+        </div>
+
+        <div id="star" style="color: #f1c93b; padding: 0 1.5rem;">4.5
+          <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i>
+          (13명)
+        </div>
       </article>
 
       <article class="review-col">
         <a href="#"  id="review-img">
           <img src="/draft_1/images/image-2.jpg" alt="image-2">
         </a>
-        <section id="title"><a href="#">장어나라</a></section>
-        <section id="nickname-star-date">
-          <section id="star" style="color: #f1c93b;">4.0
-            <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
-          </section>
+
+        <div class="rankNo-title">
+          <section id="rankNo">#2</section>
+          <section id="title"><a href="#">장어나라</a></section>
+        </div>
+
+        <div id="star" style="color: #f1c93b; padding: 0 1.5rem;">4.0
+          <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i>
+          (20명)
+        </div>
       </article>
 
       <article class="review-col">
         <a href="#"  id="review-img">
           <img src="/draft_1/images/image-3.jpg" alt="image-3">
         </a>
-        <section id="title"><a href="#">바삭돈까스</a></section>
-        <section id="nickname-star-date">
-          <section id="star" style="color: #f1c93b;">3.5
-            <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
-          </section>
+
+        <div class="rankNo-title">
+          <section id="rankNo">#3</section>
+          <section id="title"><a href="#">바삭돈까스</a></section>
+        </div>
+
+        <div id="star" style="color: #f1c93b; padding: 0 1.5rem;">3.5
+          <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i>
+          (5명)
+        </div>
       </article>
     </section>
 
     <!-- 다음 페이지 화살표 -->
-    <div class="next-row">
-      <a href="#"><i class="fa-solid fa-circle-arrow-down fa-2xl" style="color: #66b97e;"></i></a>
-    </div>
+    <section class="next-row">
+      <a href="#">
+        <div>NEXT</div>
+        <div style="padding: 0.5rem;">
+          <i class="fa-solid fa-circle-arrow-down fa-xl" 
+          style="color: #66b97e; opacity: 70%;"></i></a>
+        </div>
+    </section>
 
 
   </main>

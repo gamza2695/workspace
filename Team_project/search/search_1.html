@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>검색 후</title>
 
-  <link rel="stylesheet" href="/search/search_1.css">
+  <link rel="stylesheet" href="search_1.css">
   <script src="https://kit.fontawesome.com/39f6050202.js" crossorigin="anonymous"></script>
 
 
@@ -32,11 +32,34 @@
       </section>
 
     </header>
+
+    <!-- 로그인 후 header
+    <header>
+      <section>
+        <img src="/images/original_16.png" alt="로고이미지" width="80rem">
+      </section>
+
+      <section>
+        <article>
+          <a href="#">로그아웃</a>
+        </article>
+
+        <article>
+          <a href="#">마이페이지</a>
+        </article>
+
+        <article>
+          <a href=""><img src="/images/profileImgEx.png" alt="프로필 이미지" width="50rem"></a>
+        </article>
+      </section>
+
+    </header> -->
+    
     
 
     <!-- 검색바 영역 -->
-    <section class="search">
-      <input class="searchInput">
+    <section class="search" >
+      <input class="searchInput" style="color: #66b97e;">
       <button><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #66b97e;"></i></button>
     </section>
 
@@ -58,46 +81,52 @@
         <a href="#"  id="review-img">
           <img src="/draft_1/images/image-1.jpg" alt="image-1">
         </a>
-        <section id="title"><a href="#">칠리칠리</a></section>
-        <section class="nickname-star-date">
+        <div id="title"><a href="#">칠리칠리</a></div>
+        <div class="nickname-star-date">
           <section id="nickname"><a href="#">푸바오</a></section>
           <section id="star" style="color: #f1c93b;">4.5
             <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
             <section id="date">2023.10.20.</section>
-          </section>
+          </div>
       </article>
 
       <article class="review-col">
         <a href="#"  id="review-img">
           <img src="/draft_1/images/image-2.jpg" alt="image-2">
         </a>
-        <section id="title"><a href="#">장어나라</a></section>
-        <section class="nickname-star-date">
+        <div id="title"><a href="#">장어나라</a></div>
+        <div class="nickname-star-date">
           <section id="nickname"><a href="#">아이바오</a></section>
           <section id="star" style="color: #f1c93b;">4.0
             <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
             <section id="date">2023.10.15.</section>
-          </section>
+          </div>
       </article>
 
       <article class="review-col">
         <a href="#"  id="review-img">
           <img src="/draft_1/images/image-3.jpg" alt="image-3">
         </a>
-        <section id="title"><a href="#">바삭돈까스</a></section>
-        <section class="nickname-star-date">
+        <div id="title"><a href="#">바삭돈까스</a></div>
+        <div class="nickname-star-date">
           <section id="nickname"><a href="#">러바오</a></section>
           <section id="star" style="color: #f1c93b;">3.5
             <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
             <section id="date">2023.10.05.</section>
-          </section>
+          </div>
       </article>
     </section>
 
+
     <!-- 다음 페이지 화살표 -->
-    <div class="next-row">
-      <a href="#"><i class="fa-solid fa-circle-arrow-down fa-2xl" style="color: #66b97e;"></i></a>
-    </div>
+    <section class="next-row">
+      <a href="#">
+        <div>NEXT</div>
+        <div style="padding: 0.5rem;">
+          <i class="fa-solid fa-circle-arrow-down fa-xl" 
+          style="color: #66b97e; opacity: 70%;"></i></a>
+        </div>
+    </section>
 
 
 
