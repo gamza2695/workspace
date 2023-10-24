@@ -74,4 +74,17 @@ public class MemberServiceImpl implements MemberService {
 		
 		return mapper.login(memberEmail);
 	}
+	
+
+	@Override
+	public int checkEmail(String email) {
+		return mapper.checkEmail(email);
+	}
+	
+	@Override
+	public int checkNick(String nickname) {
+		return mapper.checkNick(nickname);
+	}
+	
+	
 }

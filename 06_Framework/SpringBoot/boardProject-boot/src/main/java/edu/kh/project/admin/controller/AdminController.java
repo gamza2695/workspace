@@ -171,5 +171,14 @@ public class AdminController {
 		
 		return "redirect:selectMember?inputEmail="+ memberEmail ;
 	}
+	
+	
+	
+	//========================================================================
+	
+	@GetMapping("ajaxTest")
+	public String ajaxTest() {
+		return "admin/ajaxTest";
+	}
 
 }
