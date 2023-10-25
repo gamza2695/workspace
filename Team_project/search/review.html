@@ -57,7 +57,7 @@
 
 
     <!-- 리뷰 -->
-    <section class="review-box">
+    <section class="review-container">
 
       <!-- 리뷰 헤드 - 제목, 평점, 찜,주소 -->
       <div class="contents-head">
@@ -91,12 +91,39 @@
 
         <!-- 리뷰 글 -->
         <section class="main-2">
-          <article class="review-total">
-            <section> 미쉘 </section>
+
+          <!-- 별점 부분 -->
+          <article class="review-rating">
+            <section class="rating-total"> 
+              <section class="profile">
+                <span class="profile-img"><img src="/images/original_16.png" alt="프로필사진"></span>
+                <span class="nickname">미쉘</span>
+              </section>
+              <section class="star-total">4.5
+                <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #66B97E;"></i>
+              </section>
+            </section>
+
+
             <section class="rating">
-              <span>맛</span>
-              <span>양</span>
-              <span>청결</span>
+              <article class="rating-1">
+                <span>맛</span>
+                <span style="color: #f1c93b;">4.5 
+                  <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i>
+                </span>
+              </article>
+              <article class="rating-2">
+                <span>양</span>
+                <span style="color: #f1c93b;">4.5 
+                  <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i>
+                </span>
+              </article>
+              <article class="rating-3">
+                <span>청결</span>
+                <span style="color: #f1c93b;"S>4.5 
+                  <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i>
+                </span>
+              </article>
             </section>
         
           </article>
@@ -104,15 +131,78 @@
 
           <article class="review-menu">
             <div><i class="fa-solid fa-utensils" style="color: #d9d9d9;"></i> 메뉴</div>
-            <section class="menu"></section>
+            <section class="menu">
+              - 두부 샐러드
+            </section>
           </article>
 
 
           <article class="review-text">
             <div><i class="fa-solid fa-pencil" style="color: #d9d9d9;"></i> 한줄평</div>
-            <section class="text"></section>
+            <section class="text">
+              맛있다
+            </section>
           </article>
         </section>
+      </div>
+
+
+      <!-- 조회수, 신고하기 -->
+      <div class="contents-foot">
+        <section class="foot-1">
+          <span class="hits-text"><i class="fa-solid fa-eye" style="color: #d9d9d9;"></i></span>
+          <span class="hits">30</span>
+        </section>
+        <section class="foot-2">
+          <button class="reportBtn"><a href="#"><i class="fa-solid fa-triangle-exclamation" style="color: #d9d9d9;"></i>
+            신고하기</a></button>
+        </section>
+      </div>
+
+      <!-- 로그인 시 - 글 수정하기, 삭제하기 -->
+      <!-- <div class="contents-foot">
+        <section class="foot-3">
+          <button class="updateBtn"><a href="#">수정하기</a></button>
+        </section>
+        <section class="foot-4">
+          <button class="deleteBtn"><a href="#">삭제하기</a></button>
+        </section>
+      </div> -->
+
+
+
+      <!-- 댓글 영역 -->
+      <div class="comment">
+        <div><i class="fa-solid fa-comment-dots" style="color: #d9d9d9;"></i> 댓글</div>
+        <section class="comment-container">
+
+          <section class="comments">
+            <div class="comm">
+              <span class="comm-profileImg"><img src="/images/original_16.png" alt="프로필사진"></span>
+              <span class="comm-nickname">미쉘</span>
+              <span class="comm-text">댓글입니다댓글입니다v댓글입니다댓글입니다댓글입니다댓글입니다v댓글입니다댓글입니다댓글입니다댓글입니다댓글입니다댓글입니다댓글입니다댓글입니다댓글입니다댓글입니다v</span>
+              <span class="comm-date">2023.10.20.</span>
+            </div>
+            <div class="comm">댓글입니다</div>
+
+
+
+
+          </section>
+
+
+
+          <section class="comm-input">
+            <form action="#">
+              <input type="text" class="comment-text"><button type="submit">제출</button>
+            </form>
+          </section>
+
+        </section>
+
+
+
+
       </div>
 
 
@@ -123,58 +213,65 @@
     <!-- 다른 리뷰 -->
     <section class="others">
 
-      <article class="review-col">
-        <a href="#"  id="review-img">
-          <img src="/draft_1/images/image-1.jpg" alt="image-1">
-        </a>
-        <div id="title"><a href="#">칠리칠리</a></div>
-        <div class="nickname-star-date">
-          <section id="nickname"><a href="#">푸바오</a></section>
-          <section id="star" style="color: #f1c93b;">4.5
-            <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
-            <section id="date">2023.10.20.</section>
-          </div>
-      </article>
+      <div>
+        <span class="others-title" style="color: #66B97E;">'스윗레시피'</span> 
+        <span>의 다른 리뷰</span>
+      </div>
 
-      <article class="review-col">
-        <a href="#"  id="review-img">
-          <img src="/draft_1/images/image-2.jpg" alt="image-2">
-        </a>
-        <div id="title"><a href="#">장어나라</a></div>
-        <div class="nickname-star-date">
-          <section id="nickname"><a href="#">아이바오</a></section>
-          <section id="star" style="color: #f1c93b;">4.0
-            <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
-            <section id="date">2023.10.15.</section>
-          </div>
-      </article>
-
-      <article class="review-col">
-        <a href="#"  id="review-img">
-          <img src="/draft_1/images/image-3.jpg" alt="image-3">
-        </a>
-        <div id="title"><a href="#">바삭돈까스</a></div>
-        <div class="nickname-star-date">
-          <section id="nickname"><a href="#">러바오</a></section>
-          <section id="star" style="color: #f1c93b;">3.5
-            <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
-            <section id="date">2023.10.05.</section>
-          </div>
-      </article>
-
-
-      <article class="review-col">
-        <a href="#"  id="review-img">
-          <img src="/draft_1/images/image-3.jpg" alt="image-3">
-        </a>
-        <div id="title"><a href="#">바삭돈까스</a></div>
-        <div class="nickname-star-date">
-          <section id="nickname"><a href="#">러바오</a></section>
-          <section id="star" style="color: #f1c93b;">3.5
-            <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
-            <section id="date">2023.10.05.</section>
-          </div>
-      </article>
+      <div>
+        <article class="review-col">
+          <a href="#"  id="review-img">
+            <img src="/draft_1/images/image-1.jpg" alt="image-1">
+          </a>
+          <div id="title"><a href="#">칠리칠리</a></div>
+          <div class="nickname-star-date">
+            <section id="nickname"><a href="#">푸바오</a></section>
+            <section id="star" style="color: #f1c93b;">4.5
+              <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
+              <section id="date">2023.10.20.</section>
+            </div>
+        </article>
+  
+        <article class="review-col">
+          <a href="#"  id="review-img">
+            <img src="/draft_1/images/image-2.jpg" alt="image-2">
+          </a>
+          <div id="title"><a href="#">장어나라</a></div>
+          <div class="nickname-star-date">
+            <section id="nickname"><a href="#">아이바오</a></section>
+            <section id="star" style="color: #f1c93b;">4.0
+              <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
+              <section id="date">2023.10.15.</section>
+            </div>
+        </article>
+  
+        <article class="review-col">
+          <a href="#"  id="review-img">
+            <img src="/draft_1/images/image-3.jpg" alt="image-3">
+          </a>
+          <div id="title"><a href="#">바삭돈까스</a></div>
+          <div class="nickname-star-date">
+            <section id="nickname"><a href="#">러바오</a></section>
+            <section id="star" style="color: #f1c93b;">3.5
+              <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
+              <section id="date">2023.10.05.</section>
+            </div>
+        </article>
+  
+  
+        <article class="review-col">
+          <a href="#"  id="review-img">
+            <img src="/draft_1/images/image-3.jpg" alt="image-3">
+          </a>
+          <div id="title"><a href="#">바삭돈까스</a></div>
+          <div class="nickname-star-date">
+            <section id="nickname"><a href="#">러바오</a></section>
+            <section id="star" style="color: #f1c93b;">3.5
+              <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
+              <section id="date">2023.10.05.</section>
+            </div>
+        </article>
+      </div>
 
 
     </section>
