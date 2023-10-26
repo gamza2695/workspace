@@ -1,0 +1,168 @@
+:root{
+  font-size: 62.5%;
+  --main-color : #66B97E;
+  --footer-color : #d9d9d9;
+}
+
+* {
+  font-family:'GmarketSansMedium';
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+main {
+  width: 114rem;
+  flex-grow: 1;
+  min-height: 50rem;
+}
+
+/* =========================================================== */
+/*-------- header --------*/
+header{
+  height: 8rem;
+  border-bottom: 2px solid var(--footer-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 로고 */
+header > section:first-child {
+  width: 55%;
+  display: flex;
+  justify-content: end;
+}
+
+/* 헤더메뉴 섹션 */
+header > section:last-child {
+  width: 45%;
+  display: flex;
+  justify-content: end;
+}
+
+/* 헤더 메뉴들 */
+header article{
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header a{
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+/* =========================================================== */
+/* 검색바 영역 */
+
+.search{
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput{
+  height: 4.5rem;
+  width: 80rem;
+  border: 0.2rem solid var(--main-color);
+  border-style: solid none solid solid;
+  border-radius: 5rem 0 0 5rem;
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+input:focus {outline:none;}
+
+.search>button{
+  height: 4.5rem;
+  width: 5rem;
+  border: 0.2rem solid var(--main-color);
+  border-style: solid solid solid none;
+  border-radius: 0 5rem 5rem 0;
+  background-color: white;
+  cursor: pointer;
+  padding: 0.1rem 0.5rem 0 0;
+}
+/* =========================================================== */
+/* 정렬 선택 영역 */
+
+.sort{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: var(--footer-color);
+}
+.sort>span{
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+.sortBtn{
+  font-size: 1.5rem; 
+  margin: 0 0.5rem;
+  background-color: white;
+  color: var(--footer-color);
+  border: none;
+  cursor: pointer;
+}
+
+/* =========================================================== */
+/* 리뷰 목록 영역*/
+
+/* .review-row{
+  height: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+} */
+
+
+
+/* =========================================================== */
+/*-------- footer --------*/
+
+footer{
+  width: 100%;
+  height: 4rem;
+  background-color: var(--footer-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.2rem;
+  font-weight: 1;
+  color: rgba(130, 130, 130, 1);
+}
+
+footer > article {
+  padding: 1.5rem;
+}
+
+footer a {
+  color: rgba(130, 130, 130, 1);
+  text-decoration: none;
+}
