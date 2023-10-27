@@ -132,7 +132,7 @@ input:focus {outline:none;}
 /* 리뷰 목록 영역*/
 
 .review-row{
-  height: 45rem;
+  height: 45rem; /* min-height 고치기 */
   display: flex;
   flex-direction: row;
   align-items: center;
