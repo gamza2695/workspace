@@ -37,7 +37,7 @@ public class BoardServiceImpl implements BoardService {
 		Pagination pagination = new Pagination(cp, listCount);
 		
 	
-		/* RowBounds 객체 생성
+		/* RowBounds 객체 생성 (마이바티스)
 		 *
 		 * - RowBounds란?
 		 *  -- Row(행), Bound(도약, 건너뛰기)
