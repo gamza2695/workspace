@@ -16,15 +16,7 @@ import edu.kh.project.admin.model.service.AjaxService;
 import edu.kh.project.member.model.dto.Member;
 import lombok.extern.slf4j.Slf4j;
 
-/**
- * 
- */
-/**
- * 
- */
-/**
- * 
- */
+
 @Slf4j // log 이용
 @Controller
 @RequestMapping("ajax") // 상위 공통 주소
