@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글</title>
+
+  <link rel="stylesheet" href="selectOne.css">
+  <script src="https://kit.fontawesome.com/39f6050202.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+
+  <main>
+
+    <!-- 헤더 -->
+    <!-- 로그인 전 header -->
+    <header>
+      <section>
+        <img src="/images/original_16.png" alt="로고이미지" width="80rem">
+      </section>
+  
+      <section>
+        <article>
+          <a href="#">로그인</a>
+        </article>
+  
+        <article>
+          <a href="#">회원가입</a>
+        </article>
+      </section>
+  
+    </header>
+  
+    <!-- 로그인 후 header
+    <header>
+      <section>
+        <img src="/images/original_16.png" alt="로고이미지" width="80rem">
+      </section>
+  
+      <section>
+        <article>
+          <a href="#">로그아웃</a>
+        </article>
+  
+        <article>
+          <a href="#">마이페이지</a>
+        </article>
+  
+        <article>
+          <a href=""><img src="/images/profileImgEx.png" alt="프로필 이미지" width="50rem"></a>
+        </article>
+      </section>
+  
+    </header> -->
+
+
+    <!-- 리뷰 -->
+    <section class="review-container">
+
+      <!-- 리뷰 헤드 - 제목, 평점, 찜,주소 -->
+      <div class="contents-head">
+        <section class="head-1">
+          <section class="head-title">스윗레시피
+            <span class="head-rating" style="color: #f1c93b;">(
+              <i class="fa-sharp fa-solid fa-star fa-sm" style="color: #f1c93b;"></i>4.5 )</span>
+          </section>
+          <section class="head-address">세종특별자치시 장군면 금암리</section>
+        </section>
+        
+        <section class="head-2">
+          <section class="head-like">
+            <!-- <i class="fa-regular fa-heart" style="color: #ff3d3d;"></i> -->
+            <!-- 좋아요 눌렀을 때 -->
+            <i class="fa-solid fa-heart" style="color: #ff3d3d;"></i>
+          </section>
+        </section>
+      </div>
+
+
+      <!-- 리뷰 내용 - 사진, 평가, 메뉴, 한줄평 -->
+      <div class="contents-main">
+
+        <!-- 리뷰 사진 -->
+        <section class="main-1">
+          <a href="#">
+            <img src="/draft_1/images/food.jpg" alt="음식">
+          </a>
+        </section>
+
+        <!-- 리뷰 글 -->
+        <section class="main-2">
+
+          <!-- 별점 부분 -->
+          <article class="review-rating">
+            <section class="rating-total"> 
+              <section class="profile">
+                <span class="profile-img"><img src="/images/original_16.png" alt="프로필사진"></span>
+                <span class="nickname">미쉘</span>
+              </section>
+              <section class="star-total">4.5
+                <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #66B97E;"></i>
+              </section>
+            </section>
+
+
+            <section class="rating">
+              <article class="rating-1">
+                <span>맛</span>
+                <span style="color: #f1c93b;">4.5 
+                  <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i>
+                </span>
+              </article>
+              <article class="rating-2">
+                <span>양</span>
+                <span style="color: #f1c93b;">4.5 
+                  <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i>
+                </span>
+              </article>
+              <article class="rating-3">
+                <span>청결</span>
+                <span style="color: #f1c93b;"S>4.5 
+                  <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i>
+                </span>
+              </article>
+            </section>
+        
+          </article>
+
+
+          <article class="review-menu">
+            <div><i class="fa-solid fa-utensils" style="color: #d9d9d9;"></i> 메뉴</div>
+            <section class="menu">
+              - 두부 샐러드
+            </section>
+          </article>
+
+
+          <article class="review-text">
+            <div><i class="fa-solid fa-pencil" style="color: #d9d9d9;"></i> 한줄평</div>
+            <section class="text">
+              맛있다
+            </section>
+          </article>
+        </section>
+      </div>
+
+
+      <!-- 조회수, 신고하기 -->
+      <!-- <div class="contents-foot">
+        <section class="foot-1">
+          <span class="hits-text"><i class="fa-solid fa-eye" style="color: #d9d9d9;"></i></span>
+          <span class="hits">30</span>
+        </section>
+        <section class="foot-2">
+          <button class="reportBtn"><a href="#"><i class="fa-solid fa-triangle-exclamation" style="color: #d9d9d9;"></i>
+            신고하기</a></button>
+        </section>
+      </div> -->
+
+      <!-- 로그인 시 - 글 수정하기, 삭제하기 -->
+      <div class="contents-foot">
+        <section class="foot-3">
+          <button class="updateBtn"><a href="#">수정하기</a></button>
+        </section>
+        <section class="foot-4">
+          <button class="deleteBtn"><a href="#">삭제하기</a></button>
+        </section>
+      </div>
+
+
+
+      <!-- 댓글 영역 -->
+      <div class="comment">
+        <div><i class="fa-solid fa-comment-dots" style="color: #d9d9d9;"></i> 댓글</div>
+
+        <section class="comment-container">
+
+          <section class="comment-1">
+            <div class="comm">
+              <div class="comm-1">
+                <span class="comm-profileImg"><img src="/images/original_16.png" alt="프로필사진"></span>
+                <span class="comm-nickname">냠냠냠냠</span>
+                <span class="comm-date">2023.10.20.18:00</span>
+              </div>
+              <div class="comm-2">
+                <span class="comm-text">댓글입니다댓글입니다댓글
+                  입니다댓글입니다댓글입니다댓글입니다댓글입니다댓글입니
+                  다댓글입니다댓글입니다댓글입니다댓글입니다댓글입니다
+                  댓글입니다댓글입니다댓글입니다댓글입니다댓글
+                  입니다댓글입니다댓글입니다댓글입니다댓글입니다댓글입니다댓글
+                  입니다댓글입니다댓글입니다댓글입니다댓글입니다댓글입니
+                  다댓글입니다댓글입니다댓글입니다댓글입니다댓글입니다
+                  댓글입니다댓글입니다댓글입니다댓글입니다댓글
+                  입니다댓글입니다댓글입니다댓글입니다</span>
+              </div>
+              <div class="comm-3">
+                <span class="comm-reply">
+                  <a href="#"><i class="fa-solid fa-reply" style="color: #d9d9d9;""></i> 답글</a>
+                </span>
+              </div>
+            </div>
+      
+            <div class="comm">
+              <div class="comm-1">
+                <span class="comm-profileImg"><img src="/images/original_16.png" alt="프로필사진"></span>
+                <span class="comm-nickname">미쉘</span>
+                <span class="comm-date">2023.10.20.18:00</span>
+              </div>
+              <div class="comm-2">
+                <span class="comm-text">댓글입니다</span>
+              </div>
+              <div class="comm-3">
+                <span class="comm-reply">
+                  <a href="#"><i class="fa-solid fa-reply" style="color: #d9d9d9;""></i> 답글</a>
+                </span>
+                <span ><button class="comm-mod">수정하기</button></span>
+                <span><button class="comm-del">삭제하기</button></span>
+              </div>
+            </div>
+
+
+          </section>
+
+
+
+          <section class="comment-2">
+
+            <textarea class="commInput" id="commInput" rows="1" placeholder="댓글쓰기..."></textarea>
+            <button><a href="#"><i class="fa-solid fa-paper-plane" style="color: #66B97E; font-size: 2rem;"></i></a></button>
+          </section>
+
+        </section>
+
+
+
+
+      </div>
+
+
+
+    </section>
+
+
+    <!-- 다른 리뷰 -->
+    <section class="others">
+
+      <div>
+        <span class="others-title" style="color: #66B97E;">'스윗레시피'</span> 
+        <span>의 다른 리뷰</span>
+      </div>
+
+      <div>
+        <article class="review-col">
+          <a href="#"  id="review-img">
+            <img src="/draft_1/images/image-1.jpg" alt="image-1">
+          </a>
+          <div id="title"><a href="#">칠리칠리</a></div>
+          <div class="nickname-star-date">
+            <section id="nickname"><a href="#">푸바오</a></section>
+            <section id="star" style="color: #f1c93b;">4.5
+              <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
+              <section id="date">2023.10.20.</section>
+            </div>
+        </article>
+  
+        <article class="review-col">
+          <a href="#"  id="review-img">
+            <img src="/draft_1/images/image-2.jpg" alt="image-2">
+          </a>
+          <div id="title"><a href="#">장어나라</a></div>
+          <div class="nickname-star-date">
+            <section id="nickname"><a href="#">아이바오</a></section>
+            <section id="star" style="color: #f1c93b;">4.0
+              <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
+              <section id="date">2023.10.15.</section>
+            </div>
+        </article>
+  
+        <article class="review-col">
+          <a href="#"  id="review-img">
+            <img src="/draft_1/images/image-3.jpg" alt="image-3">
+          </a>
+          <div id="title"><a href="#">바삭돈까스</a></div>
+          <div class="nickname-star-date">
+            <section id="nickname"><a href="#">러바오</a></section>
+            <section id="star" style="color: #f1c93b;">3.5
+              <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
+              <section id="date">2023.10.05.</section>
+            </div>
+        </article>
+  
+  
+        <article class="review-col">
+          <a href="#"  id="review-img">
+            <img src="/draft_1/images/image-3.jpg" alt="image-3">
+          </a>
+          <div id="title"><a href="#">바삭돈까스</a></div>
+          <div class="nickname-star-date">
+            <section id="nickname"><a href="#">러바오</a></section>
+            <section id="star" style="color: #f1c93b;">3.5
+              <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
+              <section id="date">2023.10.05.</section>
+            </div>
+        </article>
+      </div>
+
+
+    </section>
+
+
+
+
+
+    
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 풋터 -->
+  <footer>
+    <article>
+      <a href="#">고객센터</a>
+      <span>|</span>
+      <a href="#">라이센스</a>
+    </article>
+    <article>
+      &copy Oliview Corp.
+    </article>
+  </footer>
+
+
+</body>
+</html>

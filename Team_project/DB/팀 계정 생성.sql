@@ -1,0 +1,13 @@
+/* 계정 생성(관리자) */
+
+ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
+
+-- 계정 생성
+CREATE USER farmers IDENTIFIED BY farmers1234;
+
+-- 권한 부여
+GRANT CONNECT, RESOURCE, CREATE VIEW TO farmers;
+
+-- 객체 생성 공간 할당
+ALTER USER farmers DEFAULT TABLESPACE "A230724"
+QUOTA 20M ON "A230724";

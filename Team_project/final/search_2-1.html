@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>검색 후 - 평점순</title>
+
+  <link rel="stylesheet" href="search_2-1.css">
+  <script src="https://kit.fontawesome.com/39f6050202.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <main>
+
+    <!-- 헤더 -->
+    <!-- 로그인 전 header -->
+    <header>
+      <section>
+        <img src="/images/original_16.png" alt="로고이미지" width="80rem">
+      </section>
+
+      <section>
+        <article>
+          <a href="#">로그인</a>
+        </article>
+
+        <article>
+          <a href="#">회원가입</a>
+        </article>
+      </section>
+
+    </header>
+    
+
+    <!-- 검색바 영역 -->
+    <section class="search">
+      <input class="searchInput" style="color: #66b97e;">
+      <button><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #66b97e;"></i></button>
+    </section>
+
+    <!-- 정렬 선택 영역 -->
+    <section class="sort">
+      <button class="sortBtn" id="sort-popular" >인기순</button> <!-- 클릭시 색바꾸기 -->
+      <span>|</span>
+      <button class="sortBtn" id="sort-latest">최신순</button>
+      <span>|</span>
+      <button class="sortBtn" id="sort-rating" style="color: #66b97e;">평점순</button>
+    </section>
+
+
+    <!-- 리뷰 목록 영역 -->
+    <section class="review-row">
+      <article class="review-col">
+        <a href="#"  id="review-img">
+          <img src="/draft_1/images/image-1.jpg" alt="image-1">
+        </a>
+
+        <div class="rankNo-title">
+          <section id="rankNo">#1</section>
+          <section id="title"><a href="#">칠리칠리</a></section>
+        </div>
+
+        <div id="star" style="color: #f1c93b; padding: 0 1.5rem;">4.5
+          <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i>
+          (13명)
+        </div>
+      </article>
+
+      <article class="review-col">
+        <a href="#"  id="review-img">
+          <img src="/draft_1/images/image-2.jpg" alt="image-2">
+        </a>
+
+        <div class="rankNo-title">
+          <section id="rankNo">#2</section>
+          <section id="title"><a href="#">장어나라</a></section>
+        </div>
+
+        <div id="star" style="color: #f1c93b; padding: 0 1.5rem;">4.0
+          <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i>
+          (20명)
+        </div>
+      </article>
+
+      <article class="review-col">
+        <a href="#"  id="review-img">
+          <img src="/draft_1/images/image-3.jpg" alt="image-3">
+        </a>
+
+        <div class="rankNo-title">
+          <section id="rankNo">#3</section>
+          <section id="title"><a href="#">바삭돈까스</a></section>
+        </div>
+
+        <div id="star" style="color: #f1c93b; padding: 0 1.5rem;">3.5
+          <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i>
+          (5명)
+        </div>
+      </article>
+    </section>
+
+    <!-- 다음 페이지 화살표 -->
+    <section class="next-row">
+      <a href="#">
+        <div>NEXT</div>
+        <div style="padding: 0.5rem;">
+          <i class="fa-solid fa-circle-arrow-down fa-xl" 
+          style="color: #66b97e; opacity: 70%;"></i></a>
+        </div>
+    </section>
+
+
+  </main>
+
+
+  <!-- 풋터 -->
+  <footer>
+    <article>
+      <a href="#">고객센터</a>
+      <span>|</span>
+      <a href="#">라이센스</a>
+    </article>
+    <article>
+      &copy Oliview Corp.
+    </article>
+  </footer>
+
+
+</body>
+</html>
