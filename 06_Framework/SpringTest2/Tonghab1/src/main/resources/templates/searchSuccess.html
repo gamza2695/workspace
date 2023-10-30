@@ -8,7 +8,7 @@
 <body>
     <h1>게시글 검색 결과</h1>
 
-    <table border="1" th:object="${resultBoard}">
+    <table border="1" >
 
         <tr>
             <th>번호</th>
@@ -19,7 +19,7 @@
             <th>작성날짜</th>
         </tr>
 
-        <tr>
+        <tr th:each="board : ${boardList}" th:object="${board}">
             <td th:text="*{boardNo}"></td>
             <td th:text="*{boardTitle}"></td>
             <td th:text="*{userId}"></td>

@@ -4,8 +4,8 @@
 <mapper namespace="com.kh.test.board.model.mapper.BoardMapper">
 	
 	
-	<select id="searchBoard" resultType="board">
-		SELECT BOARD_NO, BOARD_TITLE, USER_ID, BOARD_CONTENT, BOARD_READCOUNT, BOARD_DATE 
+	<select id="searchBoard" resultType="Board">
+		SELECT BOARD_NO, BOARD_TITLE, USER_ID, BOARD_CONTENT, BOARD_READCOUNT, TO_CHAR(BOARD_DATE, 'YYYY-MM-DD') BOARD_DATE
 		FROM "TB_BOARD"
 		JOIN "TB_USER" USING (USER_NO)
 		WHERE BOARD_TITLE LIKE '%${inputTitle}%'

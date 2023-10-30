@@ -23,11 +23,10 @@ public class BoardController {
 	@GetMapping("searchBoard")
 	public String searchBoard(String inputTitle, Model model) {
 		
-		List<Board> resultBoard = new ArrayList<>();
-		resultBoard = service.searchBoard(inputTitle);
+		List<Board> resultBoard = service.searchBoard(inputTitle);
 		
-		
-		if(resultBoard != null) {
+		//if(resultBoard.size() != 0)
+		if(!resultBoard.isEmpty()) {
 			model.addAttribute("resultBoard",resultBoard);
 			return "searchSuccess";
 		}
