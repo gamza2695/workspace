@@ -77,8 +77,61 @@
           </div>
       </article>
 
+      
+
     </section>
 
+    <section class="review-row" th:unless="${#lists.size('resultReview')} == 0" th:object="${review}">
+      
+      <article class="review-col">
+        <!-- 이미지 -->
+        <a th:href="@{/review/{reviewNo} (reviewNo=*{reviewNo})}" 
+        th:text="*{reviewImg}" class="review-img">
+          <img src="#" alt="image-1">
+        </a>
+        
+        <!-- 제목(가게명) -->
+        <div class="reviewTitle"><a th:href="@{/review/{reviewNo} (reviewNo=*{reviewNo})}" 
+          th:text="*{reviewTitle}">가게이름</a></div>
+        
+          <!-- 닉네임/평점/작성일 -->
+        <div class="nickname-star-date">
+          <section class="nickname"><a th:href="#">푸바오</a></section>
+          <section class="star" style="color: #f1c93b;" th:text="*{star}">4.5
+            <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
+            <section class="writeDate" th:text="*{writeDate}">2023.10.20.</section>
+          </div>
+      </article>
+
+
+    </section>
+
+
+        <!-- 검색 : 리뷰가 존재할 때  + 인기순 -->
+        <section class="review-row" th:unless="${#lists.isEmpty(resultReview)}">
+
+          <article class="review-col" th:object="${review}">
+    
+            <!-- 이미지 -->
+            <a th:href="#" class="review-img">
+              <img src="#" alt="image-1">
+            </a>
+    
+            <!-- 제목(가게명) -->
+            <div class="reviewTitle"><a th:href="#" th:text="*{reviewTitle}">가게이름</a></div>
+    
+             <!-- 닉네임/평점/작성일 -->
+            <div class="nickname-star-date">
+              <section class="nickname" th:text="*{memberNickname}"><a th:href="#">푸바오</a></section>
+              <section class="star" style="color: #f1c93b;" th:text="*{starTaste}">4.5
+                <i class="fa-sharp fa-solid fa-star fa-ml" style="color: #f1c93b;"></i></section>
+                <section class="writeDate" th:text="*{writeDate}">2023.10.20.</section>
+              </div>
+    
+          </article>
+    
+        </section>
+    
 
     <!-- 다음 페이지 화살표 -->
     <section class="next-row">
