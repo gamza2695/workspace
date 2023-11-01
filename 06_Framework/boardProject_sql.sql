@@ -638,3 +638,22 @@ AND BOARD_NO = ?
 INSERT INTO "BOARD_LIKE" (MEMBER_NO, BOARD_NO) /* <= 이렇게 순서정할 수 있다 */
 VALUES(1, 1500);
 
+-- 게시글 삭제 확인 
+SELECT BOARD_DEL_FL FROM "BOARD"
+WHERE BOARD_NO = ;
+
+
+-- 회원 프로필 이미지 추가
+UPDATE "MEMBER" SET
+PROFILE_IMG = '/images/member/profile-img.png'
+WHERE MEMBER_NO = 1;
+
+COMMIT;
+
+SELECT PROFILE_IMG FROM "MEMBER" WHERE MEMBER_NO = 1;
+
+
+
+
+
+
