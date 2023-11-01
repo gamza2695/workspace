@@ -25,17 +25,15 @@ public class BoardController {
 		
 		List<Board> resultBoard = service.searchBoard(inputTitle);
 		
-		//if(resultBoard.size() != 0)
-		if(!resultBoard.isEmpty()) {
-			model.addAttribute("resultBoard",resultBoard);
-			return "searchSuccess";
-		}
-		
-		
-		return "searchFail";
-		
+		// if(resultBoard.isEmpty())
+		if(resultBoard.size() == 0) return "searchFail";
+
+		model.addAttribute("resultBoard",resultBoard);
+		return "searchSuccess";
 		
 	}
 	
+	
+
 	
 }
