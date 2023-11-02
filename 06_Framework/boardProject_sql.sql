@@ -652,7 +652,22 @@ COMMIT;
 
 SELECT PROFILE_IMG FROM "MEMBER" WHERE MEMBER_NO = 1;
 
+/* SEQ_IMG_NO 시퀀스 번호를 하나 생성해서 반환하는 함수 생성*/
 
+
+
+
+/* 한 번에 여러 행 삽입하기 (INSERT + 서브쿼리) */
+SELECT * FROM BOARD_IMG;
+
+INSERT INTO "BOARD_IMG"
+SELECT SEQ_IMG_NO.NEXTVAL, '경로', '변경된이름', '원본이름', 0, 1498 FROM DUAL
+UNION
+SELECT SEQ_IMG_NO.NEXTVAL, '경로2', '변경된이름2', '원본이름2', 2, 1498 FROM DUAL
+UNION
+SELECT SEQ_IMG_NO.NEXTVAL, '경로3', '변경된이름3', '원본이름3', 3, 1498 FROM DUAL;
+
+ROLLBACK;
 
 
 

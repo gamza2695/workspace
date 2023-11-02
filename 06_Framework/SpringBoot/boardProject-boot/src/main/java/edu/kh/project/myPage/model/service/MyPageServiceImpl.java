@@ -122,7 +122,7 @@ public class MyPageServiceImpl implements MyPageService {
 			// 2) 바뀐 파일명 + 경로를 loginMember 세팅
 			loginMember.setProfileImg(webpath + rename);
 			
-			// /images/member/20231101144523_00001.jpg
+			// /images/member/20231102090856_00001.jpg
 					
 					
 		} else { // 업로드된 파일이 없다면 -> 기본 이미지로 변경
