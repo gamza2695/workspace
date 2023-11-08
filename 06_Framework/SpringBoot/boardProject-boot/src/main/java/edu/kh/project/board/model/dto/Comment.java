@@ -15,7 +15,7 @@ public class Comment {
     private String commentDelFl;
     private int boardNo;
     private int memberNo;
-    private int parentNo;
+    private int parentNo; // 데이터 없으면 null이 아니고 0이 들어감
     
     private String memberNickname;
     private String profileImg;
