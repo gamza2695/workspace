@@ -72,6 +72,10 @@ public class CommentController {
 	}
 	
 	
+	/** 댓글 삭제
+	 * @param commentNo
+	 * @return result
+	 */
 	@DeleteMapping("comment")
 	public int delete(@RequestBody int commentNo) {
 		return service.delete(commentNo);
