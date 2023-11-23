@@ -21,7 +21,7 @@
 	 <!-- Member는 별칭(DBConfig 클래스 참고)-->
 	 <!-- resultType은 1행 결과를 저장할 타입 지정-->
 	 <select id="selectAll" resultType="Member">
-		SELECT MEMBER_NO, MEMBER_EMAIL, MEMBER_DEL_FL 
+		SELECT MEMBER_NO, MEMBER_EMAIL, MEMBER_DEL_FL
 		FROM "MEMBER"
 		ORDER BY MEMBER_NO DESC
 	 </select>

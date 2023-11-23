@@ -719,7 +719,7 @@ ORDER BY BOARD_NO DESC;
 
 
 
-
+-------------------------------------------------------------------------------
 
 -- 채팅 SQL
 
@@ -801,3 +801,17 @@ ALTER TABLE "MESSAGE" ADD CONSTRAINT "FK_CHATTING_ROOM_TO_MESSAGE_1" FOREIGN KEY
 REFERENCES "CHATTING_ROOM" (
 	"CHATTING_NO"
 ) ON DELETE CASCADE;
+
+
+----------------------------------------------------------------------------------
+-- 스케쥴러
+
+
+
+
+
+
+
+
+
+
