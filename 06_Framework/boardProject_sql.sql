@@ -833,6 +833,17 @@ WHERE MEMBER_NO != 0
 AND PROFILE_IMG IS NOT NULL;
 
 
+----------------------------------------------------------------------------------
+-- 인터셉터
+
+-- BOARD_TYPE 테이블 조회
+SELECT * FROM BOARD_TYPE
+WHERE BOARD_CODE != 0
+ORDER BY 1;
+
+INSERT INTO "BOARD_TYPE"
+VALUES(4, '1:1문의');
+COMMIT;
 
 
 

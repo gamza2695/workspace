@@ -79,6 +79,11 @@ public interface BoardMapper {
 	 * @return list
 	 */
 	List<String> selectDbImageList();
+
+	/** 게시판 종류 조회
+	 * @return list
+	 */
+	List<Map<String, Object>> selectBoardTypeList();
 	
 	
 
