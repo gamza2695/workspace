@@ -12,6 +12,8 @@ import State1 from './components/R06_State1';
 import State2 from './components/R07_State2';
 import State3 from './components/R08_State3';
 
+import TodoList from './components/R09_TodoList';
+
 /* =================================================================== */
 /*
   - React의 컴포넌트는 딱 하나의 요소만을 반환할 수 있다
@@ -61,7 +63,7 @@ function App() {
 
       <State3/>
 
-
+      <TodoList/>
 
     </>
   );
